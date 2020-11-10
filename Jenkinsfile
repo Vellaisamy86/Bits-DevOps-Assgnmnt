@@ -14,7 +14,7 @@ pipeline {
     def mvn = tool (name: 'maven3', type: 'maven') + '/bin/mvn'
     sh "${mvn} clean package deploy"
     }
-   }
+   
    // And next stages if you want to define further...
  } // End of stages
 } // End of pipeline
