@@ -4,8 +4,7 @@ pipeline {
     stage('GIT Checkout'){
     steps{
         // Clone repo
-            git branch: 'master',
-            credentialsId: 'github',
+            git branch: 'origin master',
             url: 'https://github.com/Vellaisamy86/Bits-DevOps-Assgnmnt'
     }
     }
