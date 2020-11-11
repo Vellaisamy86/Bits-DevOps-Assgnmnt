@@ -19,7 +19,7 @@ pipeline {
         steps{
             // Build using maven
             script{
-                mvn clean package
+                mvn "clean package"
             }
         }
     }
